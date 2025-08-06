@@ -25,8 +25,8 @@ const Login = lazy(() => import("./pages/Login"));
 const AppLayout = lazy(() => import("./pages/AppLayout"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
-// dist/assets/index-59fcab9b.css   30.56 kB │ gzip:   5.14 kB
-// dist/assets/index-f7c12d89.js   572.44 kB │ gzip: 151.29 kB
+// dist/assets/index-59fcab9b.css  
+// dist/assets/index-f7c12d89.js   
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <BrowserRouter>
           <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
-              <Route index element={<Homepage />} />
+              <Route index element={<Homepage />} /> // Path to display react-router
               <Route path="product" element={<Product />} />
               <Route path="pricing" element={<Pricing />} />
               <Route path="login" element={<Login />} />
