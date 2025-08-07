@@ -42,10 +42,13 @@ function App() {
               <Route
                 path="app"
                 element={
+                  
+                  // Protected rout here, becouse all the elements have AppLayout element, Applayout is render in all the routes
                   <ProtectedRoute>
                     <AppLayout />
                   </ProtectedRoute>
                 }
+                
               >
                 <Route index element={<Navigate replace to="cities" />} />
                 <Route path="cities" element={<CityList />} />
