@@ -16,7 +16,7 @@ export default function Login() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (email && password) login(email, password);
+    if (email && password) login(email, password); // If we have an email and password then we will to login rout
   }
 
   useEffect(
