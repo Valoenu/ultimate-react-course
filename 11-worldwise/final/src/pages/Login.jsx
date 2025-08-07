@@ -19,11 +19,13 @@ export default function Login() {
     if (email && password) login(email, password); // If we have an email and password then we will to login rout
   }
 
+
+// whether the isAuthentiacted state changed, navigate to the "/app" route.
   useEffect(
     function () {
-      if (isAuthenticated) navigate("/app", { replace: true });
+      if (isAuthenticated) navigate("/app", { replace: true }); // programatic navigation
     },
-    [isAuthenticated, navigate]
+    [isAuthenticated, navigate] // 
   );
 
   return (
